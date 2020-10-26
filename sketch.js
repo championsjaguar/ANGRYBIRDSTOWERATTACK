@@ -64,10 +64,10 @@ function setup(){
     box67 = new Box(850,160,40,40);
     box76 = new Box(810,160,40,40);
 
-    bird = new Bird(100,500);
+    bird = new Bird(100,300);
 
     //log6 = new Log(230,180,80, PI/2);
-    slingshot = new SlingShot(bird.body,{x:100, y:500});
+    slingshot = new SlingShot(bird.body,{x:100, y:300});
 }
 
 function draw(){
