@@ -3,7 +3,7 @@ class SlingShot{
         var options = {
             bodyA: bodyA,
             pointB: pointB,
-            stiffness: 0.6,
+            stiffness: 0.2,
             length: 15
 
         }
@@ -18,6 +18,7 @@ class SlingShot{
     
     fly(){
         this.sling.bodyA = null;
+         Matter.Body.applyForce(this.sling.bodyA,this.sling.bodyA.position,{x:this.pointB.x,y:this.pointB.y});
     }
 
     display(){
